@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 341.0, 750.0, 805.0, 502.0 ],
+		"rect" : [ 503.0, 744.0, 805.0, 502.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,19 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"linecount" : 3,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 23.0, 37.0, 174.0, 49.0 ],
+					"text" : "gen @expr out1 = trunc((cycle(0.1) + 1) * 500) / 100 @interval 40 @active 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
@@ -69,7 +82,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 23.0, 242.0, 62.0, 22.0 ]
+					"patching_rect" : [ 23.0, 313.0, 62.0, 22.0 ]
 				}
 
 			}
@@ -80,7 +93,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 23.0, 206.0, 104.0, 22.0 ],
+					"patching_rect" : [ 23.0, 277.0, 104.0, 22.0 ],
 					"text" : "udpreceive 12345"
 				}
 
@@ -94,7 +107,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 95.0, 149.0, 50.0, 22.0 ]
+					"patching_rect" : [ 95.0, 220.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -105,7 +118,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 95.0, 116.0, 54.0, 22.0 ],
+					"patching_rect" : [ 95.0, 187.0, 54.0, 22.0 ],
 					"text" : "r target2"
 				}
 
@@ -119,7 +132,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 23.0, 149.0, 50.0, 22.0 ]
+					"patching_rect" : [ 23.0, 220.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -130,7 +143,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 23.0, 116.0, 54.0, 22.0 ],
+					"patching_rect" : [ 23.0, 187.0, 54.0, 22.0 ],
 					"text" : "r target"
 				}
 
@@ -141,7 +154,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 23.0, 73.0, 54.0, 22.0 ],
+					"patching_rect" : [ 23.0, 144.0, 54.0, 22.0 ],
 					"text" : "s source"
 				}
 
@@ -155,7 +168,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 23.0, 43.0, 50.0, 22.0 ]
+					"patching_rect" : [ 23.0, 114.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -181,8 +194,35 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"attr" : "active",
+					"id" : "obj-17",
+					"maxclass" : "attrui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 23.0, 7.0, 150.0, 22.0 ]
+				}
+
+			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-2", 0 ]
@@ -199,7 +239,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 30.0, 137.0 ],
+					"midpoints" : [ 30.0, 208.0 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -207,7 +247,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"midpoints" : [ 102.0, 137.0 ],
+					"midpoints" : [ 102.0, 208.0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -312,6 +352,13 @@
 				"type" : "mx@s",
 				"implicit" : 1
 			}
+, 			{
+				"name" : "to target[1]_20230309.maxsnap",
+				"bootpath" : "~/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
  ],
 		"autosave" : 0,
 		"snapshot" : 		{
@@ -338,7 +385,7 @@
 							"dmap-intput-receive-name" : [ "source" ],
 							"dmap-intput-receive-name[1]" : [ "source" ],
 							"dmap-scale-inmax" : [ 1.0 ],
-							"dmap-scale-inmax[1]" : [ 1 ],
+							"dmap-scale-inmax[1]" : [ 1.0 ],
 							"dmap-scale-inmin" : [ 0.0 ],
 							"dmap-scale-inmin[1]" : [ 0.0 ],
 							"dmap-scale-outmax" : [ 10.0 ],
@@ -459,7 +506,7 @@
 										"dmap-intput-receive-name" : [ "source" ],
 										"dmap-intput-receive-name[1]" : [ "source" ],
 										"dmap-scale-inmax" : [ 1.0 ],
-										"dmap-scale-inmax[1]" : [ 1 ],
+										"dmap-scale-inmax[1]" : [ 1.0 ],
 										"dmap-scale-inmin" : [ 0.0 ],
 										"dmap-scale-inmin[1]" : [ 0.0 ],
 										"dmap-scale-outmax" : [ 10.0 ],
@@ -482,6 +529,24 @@
 							"filepath" : "~/Documents/Max 8/Snapshots",
 							"filepos" : -1,
 							"snapshotfileid" : "0d69b260f4203533e3c1f8707a596c7f"
+						}
+
+					}
+, 					{
+						"filetype" : "C74Snapshot",
+						"version" : 2,
+						"minorversion" : 0,
+						"name" : "to target[1]",
+						"origin" : "dmap.mapper.maxhelp",
+						"type" : "patcher",
+						"subtype" : "Undefined",
+						"embed" : 0,
+						"fileref" : 						{
+							"name" : "to target[1]",
+							"filename" : "to target[1]_20230309.maxsnap",
+							"filepath" : "~/Documents/Max 8/Snapshots",
+							"filepos" : -1,
+							"snapshotfileid" : "c5f7a55794bb6635b636f3a0d7a32548"
 						}
 
 					}
