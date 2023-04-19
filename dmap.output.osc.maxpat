@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1431.0, 968.0, 504.0, 404.0 ],
+		"rect" : [ 1416.0, 629.0, 499.0, 673.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -139,7 +139,7 @@
 
 					}
 ,
-					"varname" : "number"
+					"varname" : "output-osc-port"
 				}
 
 			}
@@ -208,14 +208,14 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
-							"parameter_longname" : "output-osc-host",
+							"parameter_longname" : "output-send-name",
 							"parameter_shortname" : "output-osc-host",
 							"parameter_type" : 3
 						}
 
 					}
 ,
-					"text" : "127.0.0.1",
+					"text" : "localhost",
 					"varname" : "textedit",
 					"wordwrap" : 0
 				}
