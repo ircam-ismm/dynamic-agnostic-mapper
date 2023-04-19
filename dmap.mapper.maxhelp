@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 475.0, 939.0, 805.0, 502.0 ],
+		"rect" : [ 452.0, 878.0, 966.0, 474.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,15 +40,26 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"format" : 6,
-					"id" : "obj-33",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 28.0, 396.0, 62.0, 22.0 ],
-					"varname" : "number[4]"
+					"id" : "obj-37",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 28.0, 393.0, 152.0, 22.0 ],
+					"presentation_linecount" : 3,
+					"text" : "/dmap/output2 -11.866"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 23.0, 308.0, 157.0, 22.0 ],
+					"text" : "/dmap/output 3.57"
 				}
 
 			}
@@ -218,7 +229,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 510.0, 392.0, 50.0, 22.0 ],
+					"patching_rect" : [ 350.0, 277.0, 50.0, 22.0 ],
 					"text" : "store"
 				}
 
@@ -230,7 +241,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "preset", "int", "preset", "int", "" ],
-					"patching_rect" : [ 620.0, 415.0, 100.0, 40.0 ],
+					"patching_rect" : [ 448.0, 308.0, 100.0, 40.0 ],
 					"pattrstorage" : "dmap-help"
 				}
 
@@ -242,19 +253,20 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 372.0, 392.0, 89.0, 22.0 ],
+					"patching_rect" : [ 212.0, 277.0, 89.0, 22.0 ],
 					"text" : "storagewindow"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"hidden" : 1,
 					"id" : "obj-20",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 212.0, 380.0, 100.0, 22.0 ],
+					"patching_rect" : [ 206.0, 362.0, 100.0, 22.0 ],
 					"text" : "autopattr",
 					"varname" : "u884003832[1]"
 				}
@@ -271,7 +283,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 372.0, 423.0, 195.0, 22.0 ],
+					"patching_rect" : [ 212.0, 308.0, 195.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 1207, 1519, 1680, 2074 ],
 						"parameter_enable" : 0,
@@ -300,23 +312,9 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 212.0, 223.0, 548.0, 134.0 ],
+					"patching_rect" : [ 212.0, 153.0, 689.0, 94.0 ],
 					"varname" : "mapper2",
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-9",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 23.0, 313.0, 62.0, 22.0 ],
-					"varname" : "number[3]"
 				}
 
 			}
@@ -425,7 +423,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 212.0, 37.0, 548.0, 134.0 ],
+					"patching_rect" : [ 212.0, 37.0, 685.0, 90.0 ],
 					"varname" : "mapper1",
 					"viewvisibility" : 1
 				}
@@ -434,7 +432,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-36", 1 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -443,16 +441,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"hidden" : 1,
-					"order" : 4,
-					"source" : [ "obj-20", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-33", 0 ],
-					"hidden" : 1,
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-20", 1 ]
 				}
 
@@ -461,7 +450,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"hidden" : 1,
-					"order" : 3,
+					"order" : 1,
 					"source" : [ "obj-20", 1 ]
 				}
 
@@ -471,15 +460,6 @@
 					"destination" : [ "obj-7", 0 ],
 					"hidden" : 1,
 					"order" : 0,
-					"source" : [ "obj-20", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"hidden" : 1,
-					"order" : 2,
 					"source" : [ "obj-20", 1 ]
 				}
 
@@ -521,7 +501,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-33", 0 ],
+					"destination" : [ "obj-37", 1 ],
 					"source" : [ "obj-34", 0 ]
 				}
 
@@ -549,8 +529,9 @@
 			"obj-10::obj-10::obj-43" : [ "dmap-scale-outmax[1]", "scale-outmax", 0 ],
 			"obj-10::obj-10::obj-44" : [ "dmap-scale-outmin[1]", "scale-outmin", 0 ],
 			"obj-10::obj-12" : [ "dmap-map-type[1]", "dmap-map-type", 0 ],
+			"obj-10::obj-15::obj-15" : [ "output-osc-host[2]", "output-osc-host", 1 ],
 			"obj-10::obj-15::obj-4" : [ "output-send-name[1]", "output-osc-host", 0 ],
-			"obj-10::obj-15::obj-7" : [ "output-osc-port[1]", "output-osc-port", 0 ],
+			"obj-10::obj-15::obj-7" : [ "output-osc-port[1]", "output-osc-port", 2 ],
 			"obj-10::obj-16" : [ "dmap-target-type[1]", "dmap-target-type", 0 ],
 			"obj-10::obj-5" : [ "dmap-source-type[1]", "dmap-source-type", 0 ],
 			"obj-10::obj-6::obj-2" : [ "dmap-intput-receive-name[1]", "receive-name", 0 ],
@@ -559,7 +540,9 @@
 			"obj-1::obj-10::obj-43" : [ "map-scale-outmax", "scale-outmax", 0 ],
 			"obj-1::obj-10::obj-44" : [ "map-scale-outmin", "scale-outmin", 0 ],
 			"obj-1::obj-12" : [ "dmap-map-type", "dmap-map-type", 0 ],
-			"obj-1::obj-15::obj-4" : [ "output-send-name", "output-send-name", 1 ],
+			"obj-1::obj-15::obj-15" : [ "output-osc-host[1]", "output-osc-host", 1 ],
+			"obj-1::obj-15::obj-4" : [ "output-send-name", "output-osc-host", 1 ],
+			"obj-1::obj-15::obj-7" : [ "output-osc-port", "output-osc-port", 2 ],
 			"obj-1::obj-16" : [ "dmap-target-type", "dmap-target-type", 0 ],
 			"obj-1::obj-5" : [ "dmap-source-type", "dmap-source-type", 0 ],
 			"obj-1::obj-6::obj-2" : [ "input-receive-name", "receive-name", 0 ],
@@ -596,6 +579,10 @@
 ,
 				"obj-1::obj-15::obj-4" : 				{
 					"parameter_order" : 1
+				}
+,
+				"obj-1::obj-15::obj-7" : 				{
+					"parameter_unitstyle" : 1
 				}
 ,
 				"obj-1::obj-16" : 				{
@@ -652,13 +639,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "dmap.output.max.maxpat",
-				"bootpath" : "~/src/yadam",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "dmap.output.osc.maxpat",
 				"bootpath" : "~/src/yadam",
 				"patcherrelativepath" : ".",
@@ -706,7 +686,7 @@
 						"dmap-source-type[1]" : 0.0,
 						"dmap-target-type" : 2.0,
 						"dmap-target-type[1]" : 2.0,
-						"output-osc-port" : 12345.0,
+						"output-osc-port" : 54321.0,
 						"output-osc-port[1]" : 0.0,
 						"blob" : 						{
 							"dmap-intput-receive-name[1]" : [ "source" ],
@@ -719,8 +699,10 @@
 							"map-scale-inmin" : [ 0.0 ],
 							"map-scale-outmax" : [ -26.0 ],
 							"map-scale-outmin" : [ 11.0 ],
-							"output-send-name" : [ "localhost" ],
-							"output-send-name[1]" : [ "localhost" ]
+							"output-send-name[1]" : [ "localhost" ],
+							"output-osc-host[1]" : [ "/dmap/output2" ],
+							"output-osc-host[2]" : [ "/dmap/output" ],
+							"output-send-name" : [ "localhost" ]
 						}
 
 					}
@@ -887,7 +869,7 @@
 									"dmap-source-type[1]" : 0.0,
 									"dmap-target-type" : 2.0,
 									"dmap-target-type[1]" : 2.0,
-									"output-osc-port" : 12345.0,
+									"output-osc-port" : 54321.0,
 									"output-osc-port[1]" : 0.0,
 									"blob" : 									{
 										"dmap-intput-receive-name[1]" : [ "source" ],
@@ -900,8 +882,10 @@
 										"map-scale-inmin" : [ 0.0 ],
 										"map-scale-outmax" : [ -26.0 ],
 										"map-scale-outmin" : [ 11.0 ],
-										"output-send-name" : [ "localhost" ],
-										"output-send-name[1]" : [ "localhost" ]
+										"output-send-name[1]" : [ "localhost" ],
+										"output-osc-host[1]" : [ "/dmap/output2" ],
+										"output-osc-host[2]" : [ "/dmap/output" ],
+										"output-send-name" : [ "localhost" ]
 									}
 
 								}

@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "",
+					"id" : "obj-7",
+					"index" : 1,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 23.0, 127.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -47,7 +59,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 267.5, 127.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"dmap-output-send-name" : [ "<name>" ]
+						"dmap-output-send-name" : [ "target" ]
 					}
 ,
 					"text" : "autopattr",
@@ -66,8 +78,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 99.500122000000033, 6.0, 73.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 111.0, 6.0, 73.0, 21.0 ],
-					"text" : "Send Name:",
+					"presentation_rect" : [ 0.0, 0.0, 73.0, 21.0 ],
+					"text" : "To Receive:",
 					"textcolor" : [ 0.3, 0.3, 0.3, 1.0 ]
 				}
 
@@ -82,8 +94,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 7.500122000000033, 75.0, 54.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.833373999999999, 6.0, 53.0, 21.0 ],
 					"text" : "Output:",
 					"textcolor" : [ 0.3, 0.3, 0.3, 1.0 ]
 				}
@@ -111,8 +121,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 75.0, 75.0, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 55.833373999999999, 6.0, 50.0, 22.0 ],
 					"varname" : "number"
 				}
 
@@ -121,7 +129,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-10",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -166,18 +174,19 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 175.0, 6.0, 143.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 186.0, 5.0, 143.0, 21.0 ],
+					"presentation_rect" : [ 90.0, 0.0, 143.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_longname" : "output-send-name",
+							"parameter_order" : 1,
 							"parameter_shortname" : "output-send-name",
 							"parameter_type" : 3
 						}
 
 					}
 ,
-					"text" : "<name>",
+					"text" : "target",
 					"varname" : "dmap-output-send-name",
 					"wordwrap" : 0
 				}
@@ -207,6 +216,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"order" : 1,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"order" : 2,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -253,23 +270,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-4" : [ "output-send-name", "output-send-name", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }

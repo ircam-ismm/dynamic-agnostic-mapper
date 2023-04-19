@@ -65,9 +65,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 41.500122000000033, 195.0, 54.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 2.833373999999999, 6.0, 53.0, 21.0 ],
-					"text" : "Output:",
+					"text" : "Input:",
 					"textcolor" : [ 0.3, 0.3, 0.3, 1.0 ]
 				}
 
@@ -94,8 +92,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 109.0, 195.0, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 57.833373999999992, 6.0, 50.0, 22.0 ],
 					"varname" : "number"
 				}
 
@@ -111,8 +107,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.500122000000033, 9.0, 73.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 111.0, 6.0, 73.0, 21.0 ],
-					"text" : "Send Name:",
+					"presentation_rect" : [ 0.0, 0.0, 73.0, 21.0 ],
+					"text" : "From Send:",
 					"textcolor" : [ 0.3, 0.3, 0.3, 1.0 ]
 				}
 
@@ -129,7 +125,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 93.0, 9.0, 143.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 186.0, 5.0, 143.0, 21.0 ],
+					"presentation_rect" : [ 90.0, 0.0, 143.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
