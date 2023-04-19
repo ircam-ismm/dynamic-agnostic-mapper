@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 364.0, 285.0, 895.0, 1054.0 ],
+		"rect" : [ 1722.0, 1519.0, 895.0, 1054.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 173.5, 902.0, 56.0, 22.0 ],
+					"restore" : 					{
+						"dmap-map-type" : [ 0 ],
+						"dmap-source-type" : [ 0 ],
+						"dmap-target-type" : [ 2 ]
+					}
+,
+					"text" : "autopattr",
+					"varname" : "u955010469"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgcolor" : [ 0.301961, 0.301961, 0.301961, 1 ],
 					"bgcolor2" : [ 0.2, 0.2, 0.2, 1 ],
 					"bgfillcolor_autogradient" : 0.0,
@@ -54,7 +73,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 94.0, 423.200012000000015, 259.0, 22.0 ],
-					"text" : "script sendbox dmap-map-bpatcher replace $1"
+					"text" : "script sendbox dmap-map replace $1"
 				}
 
 			}
@@ -89,7 +108,7 @@
 					"patching_rect" : [ 385.0, 347.0, 423.0, 298.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 110.0, 35.0, 423.0, 55.0 ],
-					"varname" : "dmap-map-bpatcher",
+					"varname" : "dmap-map",
 					"viewvisibility" : 1
 				}
 
@@ -137,7 +156,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 94.0, 741.200012000000015, 267.0, 22.0 ],
-					"text" : "script sendbox dmap-output-bpatcher replace $1"
+					"text" : "script sendbox dmap-output replace $1"
 				}
 
 			}
@@ -171,7 +190,7 @@
 					"patching_rect" : [ 385.0, 665.0, 423.0, 298.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 110.0, 91.0, 423.0, 30.0 ],
-					"varname" : "dmap-output-bpatcher",
+					"varname" : "dmap-output",
 					"viewvisibility" : 1
 				}
 
@@ -233,7 +252,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 94.0, 103.200012000000015, 259.0, 22.0 ],
-					"text" : "script sendbox dmap-input-bpatcher replace $1"
+					"text" : "script sendbox dmap-input replace $1"
 				}
 
 			}
@@ -268,7 +287,7 @@
 					"patching_rect" : [ 385.0, 27.0, 423.0, 298.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 110.0, 5.0, 423.0, 30.0 ],
-					"varname" : "dmap-input-bpatcher",
+					"varname" : "dmap-input",
 					"viewvisibility" : 1
 				}
 

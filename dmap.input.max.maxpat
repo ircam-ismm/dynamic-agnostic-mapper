@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1371.0, 887.0, 645.0, 480.0 ],
+		"rect" : [ 1151.0, 760.0, 645.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,23 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 174.5, 240.0, 56.0, 22.0 ],
+					"restore" : 					{
+						"input-receive-name" : [ "source" ]
+					}
+,
+					"text" : "autopattr",
+					"varname" : "u955010469"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontface" : 1,
 					"fontname" : "Lato Heavy",
@@ -78,7 +95,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 109.0, 195.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 57.833373999999992, 6.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 57.833373999999992, 6.0, 50.0, 22.0 ],
+					"varname" : "number"
 				}
 
 			}
@@ -116,15 +134,15 @@
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "dmap-intput-receive-name",
-							"parameter_shortname" : "dmap-intput-receive-name",
+							"parameter_longname" : "input-receive-name",
+							"parameter_shortname" : "receive-name",
 							"parameter_type" : 3
 						}
 
 					}
 ,
-					"text" : "<name>",
-					"varname" : "dmap-intput-receive-name",
+					"text" : "source",
+					"varname" : "input-receive-name",
 					"wordwrap" : 0
 				}
 
@@ -133,7 +151,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-9",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -229,23 +247,14 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-2" : [ "dmap-intput-receive-name", "dmap-intput-receive-name", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-8", 1 ]
 				}
 
 			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }

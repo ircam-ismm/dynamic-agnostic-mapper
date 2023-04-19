@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,24 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 357.5, 139.0, 56.0, 22.0 ],
+					"restore" : 					{
+						"output-osc-host" : [ "localhost" ],
+						"output-osc-port" : [ 255 ]
+					}
+,
+					"text" : "autopattr",
+					"varname" : "u955010469"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontface" : 1,
 					"fontname" : "Lato Heavy",
@@ -112,7 +130,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 81.0, 82.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 55.833373999999999, 6.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 55.833373999999999, 6.0, 50.0, 22.0 ],
+					"varname" : "number"
 				}
 
 			}
@@ -133,8 +152,10 @@
 						"valueof" : 						{
 							"parameter_longname" : "output-osc-port",
 							"parameter_mmax" : 65535.0,
+							"parameter_order" : 2,
 							"parameter_shortname" : "output-osc-port",
-							"parameter_type" : 0
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -208,7 +229,9 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
+							"parameter_linknames" : 1,
 							"parameter_longname" : "output-send-name",
+							"parameter_order" : 1,
 							"parameter_shortname" : "output-osc-host",
 							"parameter_type" : 3
 						}
@@ -216,7 +239,7 @@
 					}
 ,
 					"text" : "localhost",
-					"varname" : "textedit",
+					"varname" : "output-osc-host",
 					"wordwrap" : 0
 				}
 
@@ -260,6 +283,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-2", 1 ]
 				}
 
 			}

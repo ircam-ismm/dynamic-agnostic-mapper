@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,23 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 267.5, 127.0, 56.0, 22.0 ],
+					"restore" : 					{
+						"dmap-output-send-name" : [ "<name>" ]
+					}
+,
+					"text" : "autopattr",
+					"varname" : "u955010469"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontface" : 1,
 					"fontname" : "Lato Heavy",
@@ -95,7 +112,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 75.0, 75.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 55.833373999999999, 6.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 55.833373999999999, 6.0, 50.0, 22.0 ],
+					"varname" : "number"
 				}
 
 			}
@@ -197,6 +215,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-2", 1 ]
 				}
 
 			}
