@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1416.0, 629.0, 737.0, 725.0 ],
+		"rect" : [ 1522.0, 552.0, 350.0, 778.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,36 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 212.0, 121.0, 50.0, 22.0 ],
+					"text" : "set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 275.5, 69.0, 72.0, 22.0 ],
+					"text" : "sel bang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-18",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 275.5, 74.0, 72.0, 22.0 ],
+					"patching_rect" : [ 275.5, 38.0, 72.0, 22.0 ],
 					"text" : "route text"
 				}
 
@@ -57,7 +81,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 275.5, 104.0, 72.0, 22.0 ],
+					"patching_rect" : [ 275.5, 117.0, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -79,11 +103,12 @@
 					"fontface" : 1,
 					"fontname" : "Lato Heavy",
 					"fontsize" : 12.0,
+					"hint" : "The message to be prefixed to the value. Can be empty for no prefix.",
 					"id" : "obj-14",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 213.833373999999992, 51.0, 58.0, 21.0 ],
+					"patching_rect" : [ 213.833373999999992, 10.0, 58.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 58.0, 21.0 ],
 					"text" : "Message:",
@@ -93,6 +118,7 @@
 			}
 , 			{
 				"box" : 				{
+					"hint" : "The message to be prefixed to the value. Can be empty for no prefix.",
 					"id" : "obj-15",
 					"keymode" : 1,
 					"lines" : 1,
@@ -101,7 +127,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 275.5, 51.0, 143.0, 21.0 ],
+					"patching_rect" : [ 275.5, 10.0, 143.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 75.0, 0.0, 135.0, 21.0 ],
 					"saved_attribute_attributes" : 					{
@@ -116,7 +142,6 @@
 
 					}
 ,
-					"text" : "/dmap/output",
 					"varname" : "output-osc-message",
 					"wordwrap" : 0
 				}
@@ -144,7 +169,7 @@
 					"patching_rect" : [ 129.5, 46.0, 56.0, 22.0 ],
 					"restore" : 					{
 						"output-osc-host" : [ "localhost" ],
-						"output-osc-message" : [ "/dmap/output" ],
+						"output-osc-message" : [ "" ],
 						"output-osc-port" : [ 12345 ]
 					}
 ,
@@ -411,7 +436,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
+					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-18", 0 ]
 				}
 
@@ -420,6 +445,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-2", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-23", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}

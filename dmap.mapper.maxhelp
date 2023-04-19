@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 452.0, 878.0, 966.0, 474.0 ],
+		"rect" : [ 31.0, 819.0, 966.0, 474.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -47,7 +47,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 28.0, 393.0, 152.0, 22.0 ],
 					"presentation_linecount" : 3,
-					"text" : "/dmap/output2 -11.866"
+					"text" : "/dmap/output2 -1.765"
 				}
 
 			}
@@ -59,7 +59,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 23.0, 308.0, 157.0, 22.0 ],
-					"text" : "/dmap/output 3.57"
+					"text" : "27."
 				}
 
 			}
@@ -288,7 +288,7 @@
 						"client_rect" : [ 1207, 1519, 1680, 2074 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 572, 1505, 1186, 2164 ]
+						"storage_rect" : [ 0, 79, 759, 735 ]
 					}
 ,
 					"text" : "pattrstorage dmap-help @greedy 1",
@@ -529,22 +529,23 @@
 			"obj-10::obj-10::obj-43" : [ "dmap-scale-outmax[1]", "scale-outmax", 0 ],
 			"obj-10::obj-10::obj-44" : [ "dmap-scale-outmin[1]", "scale-outmin", 0 ],
 			"obj-10::obj-12" : [ "dmap-map-type[1]", "dmap-map-type", 0 ],
-			"obj-10::obj-15::obj-15" : [ "output-osc-host[2]", "output-osc-host", 1 ],
-			"obj-10::obj-15::obj-4" : [ "output-send-name[1]", "output-osc-host", 0 ],
-			"obj-10::obj-15::obj-7" : [ "output-osc-port[1]", "output-osc-port", 2 ],
+			"obj-10::obj-15::obj-15" : [ "output-osc-message[1]", "osc-message", 1 ],
+			"obj-10::obj-15::obj-4" : [ "output-send-name[1]", "output-send-name", 0 ],
 			"obj-10::obj-16" : [ "dmap-target-type[1]", "dmap-target-type", 0 ],
 			"obj-10::obj-5" : [ "dmap-source-type[1]", "dmap-source-type", 0 ],
+			"obj-10::obj-6::obj-15" : [ "output-osc-message[3]", "osc-message", 1 ],
 			"obj-10::obj-6::obj-2" : [ "dmap-intput-receive-name[1]", "receive-name", 0 ],
 			"obj-1::obj-10::obj-2" : [ "map-scale-inmin", "scale-inmin", 0 ],
 			"obj-1::obj-10::obj-4" : [ "map-scale-inmax", "scale-inmax", 0 ],
 			"obj-1::obj-10::obj-43" : [ "map-scale-outmax", "scale-outmax", 0 ],
 			"obj-1::obj-10::obj-44" : [ "map-scale-outmin", "scale-outmin", 0 ],
 			"obj-1::obj-12" : [ "dmap-map-type", "dmap-map-type", 0 ],
-			"obj-1::obj-15::obj-15" : [ "output-osc-host[1]", "output-osc-host", 1 ],
+			"obj-1::obj-15::obj-15" : [ "output-osc-message", "osc-message", 1 ],
 			"obj-1::obj-15::obj-4" : [ "output-send-name", "output-osc-host", 1 ],
 			"obj-1::obj-15::obj-7" : [ "output-osc-port", "output-osc-port", 2 ],
 			"obj-1::obj-16" : [ "dmap-target-type", "dmap-target-type", 0 ],
 			"obj-1::obj-5" : [ "dmap-source-type", "dmap-source-type", 0 ],
+			"obj-1::obj-6::obj-15" : [ "output-osc-message[2]", "osc-message", 1 ],
 			"obj-1::obj-6::obj-2" : [ "input-receive-name", "receive-name", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -575,6 +576,10 @@
 				"obj-1::obj-12" : 				{
 					"parameter_longname" : "dmap-map-type",
 					"parameter_shortname" : "dmap-map-type"
+				}
+,
+				"obj-1::obj-15::obj-15" : 				{
+					"parameter_shortname" : "osc-message"
 				}
 ,
 				"obj-1::obj-15::obj-4" : 				{
@@ -633,6 +638,13 @@
 			}
 , 			{
 				"name" : "dmap.mapper.maxpat",
+				"bootpath" : "~/src/yadam",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "dmap.output.max.maxpat",
 				"bootpath" : "~/src/yadam",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

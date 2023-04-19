@@ -47,10 +47,10 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 456.500122000000033, 284.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"map-scale-inmax" : [ 10.0 ],
+						"map-scale-inmax" : [ 1.0 ],
 						"map-scale-inmin" : [ 0.0 ],
-						"map-scale-outmax" : [ -26.0 ],
-						"map-scale-outmin" : [ 11.0 ]
+						"map-scale-outmax" : [ 1.0 ],
+						"map-scale-outmin" : [ 0.0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -165,7 +165,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 419.500122000000033, 71.0, 37.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 322.0, 0.0, 56.0, 21.0 ],
+					"presentation_rect" : [ 325.0, 0.0, 56.0, 21.0 ],
 					"text" : "OutMax:",
 					"textcolor" : [ 0.3, 0.3, 0.3, 1.0 ]
 				}
