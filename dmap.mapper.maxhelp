@@ -40,13 +40,40 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-12",
+					"id" : "obj-14",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 140.0, 220.0, 87.0, 22.0 ],
-					"text" : "reverse 2.42"
+					"patching_rect" : [ 454.0, 237.0, 110.0, 22.0 ],
+					"text" : "mapper1, mapper2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 454.0, 264.0, 266.0, 35.0 ],
+					"presentation_linecount" : 12,
+					"text" : "priority $1::dmap-output::catart-outmin 10, priority $1::dmap-output::catart-outmax 11"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 140.0, 220.0, 87.0, 35.0 ],
+					"text" : "duration -1780."
 				}
 
 			}
@@ -82,7 +109,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 23.0, 308.0, 157.0, 22.0 ],
-					"text" : "2.42"
+					"text" : "/asdf/foo 4.56"
 				}
 
 			}
@@ -303,11 +330,18 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 229.0, 308.0, 319.0, 22.0 ],
+					"priority" : 					{
+						"mapper1::dmap-output::catart-outmin" : 10,
+						"mapper1::dmap-output::catart-outmax" : 11,
+						"mapper2::dmap-output::catart-outmax" : 11,
+						"mapper2::dmap-output::catart-outmin" : 10
+					}
+,
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 44, 358, 172 ],
+						"client_rect" : [ 1190, 540, 1732, 1324 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ -7, 79, 492, 911 ]
+						"storage_rect" : [ -7, 79, 715, 911 ]
 					}
 ,
 					"text" : "pattrstorage dmap-help @greedy 1 @savemode 1",
@@ -331,7 +365,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 229.0, 135.0, 736.0, 99.0 ],
+					"patching_rect" : [ 229.0, 135.0, 753.0, 98.0 ],
 					"varname" : "mapper2",
 					"viewvisibility" : 1
 				}
@@ -451,6 +485,20 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-36", 1 ],
 					"source" : [ "obj-2", 0 ]
 				}
@@ -556,9 +604,13 @@
 			"obj-10::obj-10::obj-43" : [ "dmap-scale-outmax[1]", "scale-outmax", 0 ],
 			"obj-10::obj-10::obj-44" : [ "dmap-scale-outmin[1]", "scale-outmin", 0 ],
 			"obj-10::obj-12" : [ "dmap-map-type[1]", "dmap-map-type", 0 ],
-			"obj-10::obj-15::obj-15" : [ "output-max-message", "message", 1 ],
-			"obj-10::obj-15::obj-4" : [ "output-send-name[1]", "output-osc-host", 0 ],
-			"obj-10::obj-15::obj-7" : [ "output-osc-port", "output-osc-port", 2 ],
+			"obj-10::obj-15::obj-25" : [ "umenu[4]", "catart-parameter", 0 ],
+			"obj-10::obj-15::obj-32" : [ "catart-parameter[1]", "catart-parameter", 0 ],
+			"obj-10::obj-15::obj-33" : [ "umenu[5]", "catart-parameter", 0 ],
+			"obj-10::obj-15::obj-4" : [ "output-send-name[1]", "output-send-name", 0 ],
+			"obj-10::obj-15::obj-43" : [ "catart-outmax[1]", "scale-outmax", 0 ],
+			"obj-10::obj-15::obj-44" : [ "catart-outmin[1]", "scale-outmin", 0 ],
+			"obj-10::obj-15::obj-9" : [ "umenu[3]", "catart-parameter", 0 ],
 			"obj-10::obj-16" : [ "dmap-target-type[1]", "dmap-target-type", 0 ],
 			"obj-10::obj-5" : [ "dmap-source-type[1]", "dmap-source-type", 0 ],
 			"obj-10::obj-6::obj-15" : [ "input-max-message", "message", 1 ],
@@ -590,11 +642,6 @@
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-10::obj-15::obj-15" : 				{
-					"parameter_longname" : "output-max-message",
-					"parameter_shortname" : "message"
-				}
-,
 				"obj-10::obj-6::obj-15" : 				{
 					"parameter_linknames" : 0,
 					"parameter_longname" : "input-max-message",
@@ -692,13 +739,6 @@
 			}
 , 			{
 				"name" : "dmap.output.catart.maxpat",
-				"bootpath" : "~/src/yadam",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "dmap.output.osc.maxpat",
 				"bootpath" : "~/src/yadam",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
