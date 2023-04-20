@@ -134,15 +134,15 @@
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "output-osc-message",
+							"parameter_longname" : "output-max-message",
 							"parameter_order" : 1,
-							"parameter_shortname" : "osc-message",
+							"parameter_shortname" : "message",
 							"parameter_type" : 3
 						}
 
 					}
 ,
-					"varname" : "output-osc-message[1]",
+					"varname" : "output-max-message",
 					"wordwrap" : 0
 				}
 
@@ -168,8 +168,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 128.5, 44.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"dmap-output-send-name" : [ "target" ],
-						"output-osc-message[1]" : [ "" ]
+						"max-send-name" : [ "target" ],
+						"output-max-message" : [ "" ]
 					}
 ,
 					"text" : "autopattr",
@@ -289,8 +289,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
-							"parameter_longname" : "output-send-name",
-							"parameter_order" : 1,
+							"parameter_longname" : "output-send-name[1]",
 							"parameter_shortname" : "output-send-name",
 							"parameter_type" : 3
 						}
@@ -298,7 +297,7 @@
 					}
 ,
 					"text" : "target",
-					"varname" : "dmap-output-send-name",
+					"varname" : "max-send-name",
 					"wordwrap" : 0
 				}
 

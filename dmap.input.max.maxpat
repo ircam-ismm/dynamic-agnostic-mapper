@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1967.0, 1519.0, 644.0, 411.0 ],
+		"rect" : [ 1227.0, 170.0, 644.0, 411.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -158,16 +158,15 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
-							"parameter_linknames" : 1,
 							"parameter_longname" : "input-max-message",
 							"parameter_order" : 1,
-							"parameter_shortname" : "osc-message",
+							"parameter_shortname" : "message",
 							"parameter_type" : 3
 						}
 
 					}
 ,
-					"varname" : "input-max-message",
+					"varname" : "max-message",
 					"wordwrap" : 0
 				}
 
@@ -181,8 +180,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 148.5, 264.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"input-max-message" : [ "" ],
-						"input-receive-name" : [ "source" ]
+						"max-message" : [ "" ],
+						"max-receive-name" : [ "source" ]
 					}
 ,
 					"text" : "autopattr",
@@ -267,7 +266,7 @@
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "input-receive-name",
+							"parameter_longname" : "max-receive-name",
 							"parameter_shortname" : "receive-name",
 							"parameter_type" : 3
 						}
@@ -275,7 +274,7 @@
 					}
 ,
 					"text" : "source",
-					"varname" : "input-receive-name",
+					"varname" : "max-receive-name",
 					"wordwrap" : 0
 				}
 

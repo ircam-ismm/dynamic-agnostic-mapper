@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 819.0, 966.0, 474.0 ],
+		"rect" : [ 73.0, 854.0, 1079.0, 467.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,8 +45,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 140.0, 220.0, 69.0, 22.0 ],
-					"text" : "period 9.89"
+					"patching_rect" : [ 140.0, 220.0, 87.0, 22.0 ],
+					"text" : "reverse 2.42"
 				}
 
 			}
@@ -82,7 +82,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 23.0, 308.0, 157.0, 22.0 ],
-					"text" : "9.89"
+					"text" : "2.42"
 				}
 
 			}
@@ -264,7 +264,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "preset", "int", "preset", "int", "" ],
-					"patching_rect" : [ 465.0, 308.0, 100.0, 40.0 ],
+					"patching_rect" : [ 577.0, 313.0, 100.0, 40.0 ],
 					"pattrstorage" : "dmap-help"
 				}
 
@@ -302,15 +302,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 229.0, 308.0, 195.0, 22.0 ],
+					"patching_rect" : [ 229.0, 308.0, 319.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 1207, 1519, 1680, 2074 ],
+						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 0, 79, 759, 735 ]
+						"storage_rect" : [ -7, 79, 492, 911 ]
 					}
 ,
-					"text" : "pattrstorage dmap-help @greedy 1",
+					"text" : "pattrstorage dmap-help @greedy 1 @savemode 1",
 					"varname" : "dmap-help"
 				}
 
@@ -331,7 +331,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 229.0, 153.0, 689.0, 94.0 ],
+					"patching_rect" : [ 229.0, 135.0, 736.0, 99.0 ],
 					"varname" : "mapper2",
 					"viewvisibility" : 1
 				}
@@ -442,7 +442,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 229.0, 37.0, 685.0, 90.0 ],
+					"patching_rect" : [ 229.0, 37.0, 753.0, 84.0 ],
 					"varname" : "mapper1",
 					"viewvisibility" : 1
 				}
@@ -550,30 +550,35 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-10::obj-10::obj-11" : [ "scale-clip[1]", "clip", 0 ],
 			"obj-10::obj-10::obj-2" : [ "dmap-scale-inmin[1]", "scale-inmin", 0 ],
 			"obj-10::obj-10::obj-4" : [ "dmap-scale-inmax[1]", "scale-inmax", 0 ],
 			"obj-10::obj-10::obj-43" : [ "dmap-scale-outmax[1]", "scale-outmax", 0 ],
 			"obj-10::obj-10::obj-44" : [ "dmap-scale-outmin[1]", "scale-outmin", 0 ],
 			"obj-10::obj-12" : [ "dmap-map-type[1]", "dmap-map-type", 0 ],
-			"obj-10::obj-15::obj-32" : [ "output-catart-parameter", "catart-parameter", 0 ],
-			"obj-10::obj-15::obj-33" : [ "output-catart-parameter[1]", "catart-parameter", 0 ],
-			"obj-10::obj-15::obj-4" : [ "output-send-name[1]", "output-send-name", 0 ],
-			"obj-10::obj-15::obj-9" : [ "all-params", "catart-parameter", 0 ],
+			"obj-10::obj-15::obj-15" : [ "output-max-message", "message", 1 ],
+			"obj-10::obj-15::obj-4" : [ "output-send-name[1]", "output-osc-host", 0 ],
+			"obj-10::obj-15::obj-7" : [ "output-osc-port", "output-osc-port", 2 ],
 			"obj-10::obj-16" : [ "dmap-target-type[1]", "dmap-target-type", 0 ],
 			"obj-10::obj-5" : [ "dmap-source-type[1]", "dmap-source-type", 0 ],
-			"obj-10::obj-6::obj-15" : [ "output-osc-message[3]", "osc-message", 1 ],
-			"obj-10::obj-6::obj-2" : [ "dmap-intput-receive-name[1]", "receive-name", 0 ],
-			"obj-1::obj-10::obj-2" : [ "map-scale-inmin", "scale-inmin", 0 ],
-			"obj-1::obj-10::obj-4" : [ "map-scale-inmax", "scale-inmax", 0 ],
-			"obj-1::obj-10::obj-43" : [ "map-scale-outmax", "scale-outmax", 0 ],
-			"obj-1::obj-10::obj-44" : [ "map-scale-outmin", "scale-outmin", 0 ],
+			"obj-10::obj-6::obj-15" : [ "input-max-message", "message", 1 ],
+			"obj-10::obj-6::obj-2" : [ "max-receive-name", "receive-name", 0 ],
+			"obj-1::obj-10::obj-11" : [ "scale-clip", "clip", 0 ],
+			"obj-1::obj-10::obj-2" : [ "scale-inmin", "scale-inmin", 0 ],
+			"obj-1::obj-10::obj-4" : [ "scale-inmax", "scale-inmax", 0 ],
+			"obj-1::obj-10::obj-43" : [ "scale-outmax", "scale-outmax", 0 ],
+			"obj-1::obj-10::obj-44" : [ "scale-outmin", "scale-outmin", 0 ],
 			"obj-1::obj-12" : [ "dmap-map-type", "dmap-map-type", 0 ],
-			"obj-1::obj-15::obj-15" : [ "output-osc-message", "osc-message", 1 ],
-			"obj-1::obj-15::obj-4" : [ "output-send-name", "output-osc-host", 1 ],
-			"obj-1::obj-15::obj-7" : [ "output-osc-port", "output-osc-port", 2 ],
+			"obj-1::obj-15::obj-25" : [ "umenu[2]", "catart-parameter", 0 ],
+			"obj-1::obj-15::obj-32" : [ "catart-parameter", "catart-parameter", 0 ],
+			"obj-1::obj-15::obj-33" : [ "umenu[1]", "catart-parameter", 0 ],
+			"obj-1::obj-15::obj-4" : [ "output-send-name", "output-send-name", 1 ],
+			"obj-1::obj-15::obj-43" : [ "catart-outmax", "scale-outmax", 0 ],
+			"obj-1::obj-15::obj-44" : [ "catart-outmin", "scale-outmin", 0 ],
+			"obj-1::obj-15::obj-9" : [ "umenu", "catart-parameter", 0 ],
 			"obj-1::obj-16" : [ "dmap-target-type", "dmap-target-type", 0 ],
 			"obj-1::obj-5" : [ "dmap-source-type", "dmap-source-type", 0 ],
-			"obj-1::obj-6::obj-15" : [ "output-osc-message[2]", "osc-message", 1 ],
+			"obj-1::obj-6::obj-15" : [ "output-osc-message[2]", "message", 1 ],
 			"obj-1::obj-6::obj-2" : [ "input-receive-name", "receive-name", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
@@ -585,6 +590,21 @@
 			}
 ,
 			"parameter_overrides" : 			{
+				"obj-10::obj-15::obj-15" : 				{
+					"parameter_longname" : "output-max-message",
+					"parameter_shortname" : "message"
+				}
+,
+				"obj-10::obj-6::obj-15" : 				{
+					"parameter_linknames" : 0,
+					"parameter_longname" : "input-max-message",
+					"parameter_shortname" : "message"
+				}
+,
+				"obj-1::obj-10::obj-11" : 				{
+					"parameter_shortname" : "clip"
+				}
+,
 				"obj-1::obj-10::obj-2" : 				{
 					"parameter_shortname" : "scale-inmin"
 				}
@@ -604,10 +624,6 @@
 				"obj-1::obj-12" : 				{
 					"parameter_longname" : "dmap-map-type",
 					"parameter_shortname" : "dmap-map-type"
-				}
-,
-				"obj-1::obj-15::obj-15" : 				{
-					"parameter_shortname" : "osc-message"
 				}
 ,
 				"obj-1::obj-15::obj-4" : 				{

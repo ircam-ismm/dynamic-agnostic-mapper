@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 267.0, 150.0, 911.0, 628.0 ],
+		"rect" : [ 153.0, 144.0, 1002.0, 627.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -115,7 +115,7 @@
 					"restore" : 					{
 						"dmap-map-type" : [ 0 ],
 						"dmap-source-type" : [ 0 ],
-						"dmap-target-type" : [ 0 ]
+						"dmap-target-type" : [ 3 ]
 					}
 ,
 					"text" : "autopattr",
@@ -171,9 +171,9 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 336.0, 207.0, 470.0, 98.200012000000015 ],
+					"patching_rect" : [ 336.0, 207.0, 629.0, 98.200012000000015 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 105.0, 30.0, 456.0, 31.0 ],
+					"presentation_rect" : [ 105.0, 30.0, 651.0, 31.0 ],
 					"varname" : "dmap-map",
 					"viewvisibility" : 1
 				}
@@ -194,7 +194,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "scale", "func" ],
-							"parameter_longname" : "dmap-map-type",
+							"parameter_longname" : "dmap-map-type[1]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "dmap-map-type",
 							"parameter_type" : 2
@@ -249,14 +249,14 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "dmap.output.osc.maxpat",
+					"name" : "dmap.output.catart.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 336.0, 354.0, 470.0, 76.200012000000015 ],
+					"patching_rect" : [ 336.0, 354.0, 629.0, 76.200012000000015 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 217.0, 60.5, 462.0, 30.0 ],
+					"presentation_rect" : [ 217.0, 60.5, 539.0, 30.0 ],
 					"varname" : "dmap-output",
 					"viewvisibility" : 1
 				}
@@ -278,7 +278,7 @@
 						"valueof" : 						{
 							"parameter_enum" : [ "max", "midi", "osc", "catart" ],
 							"parameter_linknames" : 1,
-							"parameter_longname" : "dmap-target-type",
+							"parameter_longname" : "dmap-target-type[1]",
 							"parameter_mmax" : 3,
 							"parameter_shortname" : "dmap-target-type",
 							"parameter_type" : 2
@@ -351,9 +351,9 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 336.0, 60.0, 470.0, 98.200012000000015 ],
+					"patching_rect" : [ 336.0, 60.0, 629.0, 98.200012000000015 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 217.0, 0.0, 462.0, 30.0 ],
+					"presentation_rect" : [ 217.0, 0.0, 539.0, 30.0 ],
 					"varname" : "dmap-input",
 					"viewvisibility" : 1
 				}
@@ -374,7 +374,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "max", "midi", "osc" ],
-							"parameter_longname" : "dmap-source-type",
+							"parameter_longname" : "dmap-source-type[1]",
 							"parameter_mmax" : 2,
 							"parameter_shortname" : "dmap-source-type",
 							"parameter_type" : 2
@@ -390,7 +390,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -402,7 +402,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -536,55 +536,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-10::obj-2" : [ "map-scale-inmin", "scale-inmin", 0 ],
-			"obj-10::obj-4" : [ "map-scale-inmax", "scale-inmax", 0 ],
-			"obj-10::obj-43" : [ "map-scale-outmax", "scale-outmax", 0 ],
-			"obj-10::obj-44" : [ "map-scale-outmin", "scale-outmin", 0 ],
-			"obj-12" : [ "dmap-map-type", "dmap-map-type", 0 ],
-			"obj-15::obj-15" : [ "output-osc-message", "osc-message", 1 ],
-			"obj-15::obj-4" : [ "output-osc-host", "output-osc-host", 1 ],
-			"obj-15::obj-7" : [ "output-osc-port", "output-osc-port", 2 ],
-			"obj-16" : [ "dmap-target-type", "dmap-target-type", 0 ],
-			"obj-5" : [ "dmap-source-type", "dmap-source-type", 0 ],
-			"obj-6::obj-15" : [ "input-max-message", "osc-message", 1 ],
-			"obj-6::obj-2" : [ "input-receive-name", "receive-name", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "dmap.input.max.maxpat",
-				"bootpath" : "~/src/yadam",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "dmap.map.scale.maxpat",
-				"bootpath" : "~/src/yadam",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "dmap.output.osc.maxpat",
-				"bootpath" : "~/src/yadam",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
