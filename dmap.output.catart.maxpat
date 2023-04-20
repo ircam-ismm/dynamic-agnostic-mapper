@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1139.0, 797.0, 915.0, 518.0 ],
+		"rect" : [ 1121.0, 760.0, 934.0, 619.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,184 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 303.0, 116.0, 185.0, 20.0 ],
+					"presentation_linecount" : 2,
+					"text" : "concat + select + custom params"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 692.0, 501.0, 150.0, 20.0 ],
+					"text" : "all attrs"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 408.0, 472.0, 150.0, 20.0 ],
+					"text" : "useful concat params"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"items" : [ "attack", ",", "attackcurve", ",", "bufferindex", ",", "duration", ",", "durationvar", ",", "filterfreq", ",", "filterfreqvar", ",", "filtergain", ",", "filtermode", ",", "filterq", ",", "filterqvar", ",", "level", ",", "levelvar", ",", "period", ",", "periodvar", ",", "play", ",", "positionvar", ",", "release", ",", "releasecurve", ",", "resampling", ",", "resamplingvar", ",", "reverse", ",", "window" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 405.0, 501.0, 111.0, 22.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "attack", "attackcurve", "bufferindex", "duration", "durationvar", "filterfreq", "filterfreqvar", "filtergain", "filtermode", "filterq", "filterqvar", "level", "levelvar", "period", "periodvar", "play", "positionvar", "release", "releasecurve", "resampling", "resamplingvar", "reverse", "window" ],
+							"parameter_linknames" : 1,
+							"parameter_longname" : "output-catart-parameter[1]",
+							"parameter_mmax" : 22,
+							"parameter_shortname" : "catart-parameter",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "output-catart-parameter[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"items" : [ "x", ",", "y", ",", "k", ",", "radius", ",", "reverseprob", ",", "triggerchance", ",", "attack", ",", "attackcurve", ",", "bufferindex", ",", "duration", ",", "durationvar", ",", "filterfreq", ",", "filterfreqvar", ",", "filtergain", ",", "filtermode", ",", "filterq", ",", "filterqvar", ",", "level", ",", "levelvar", ",", "period", ",", "periodvar", ",", "play", ",", "positionvar", ",", "release", ",", "releasecurve", ",", "resampling", ",", "resamplingvar", ",", "reverse", ",", "window" ],
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 173.666626000000008, 116.0, 111.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 79.0, 0.0, 125.0, 22.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "x", "y", "k", "radius", "reverseprob", "triggerchance", "attack", "attackcurve", "bufferindex", "duration", "durationvar", "filterfreq", "filterfreqvar", "filtergain", "filtermode", "filterq", "filterqvar", "level", "levelvar", "period", "periodvar", "play", "positionvar", "release", "releasecurve", "resampling", "resamplingvar", "reverse", "window" ],
+							"parameter_linknames" : 1,
+							"parameter_longname" : "output-catart-parameter",
+							"parameter_mmax" : 28,
+							"parameter_shortname" : "catart-parameter",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "output-catart-parameter"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 776.0, 465.0, 35.0, 22.0 ],
+					"text" : "clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 571.0, 465.0, 65.0, 22.0 ],
+					"text" : "append $2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 685.0, 465.0, 50.0, 22.0 ],
+					"text" : "get $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 678.333333333333371, 416.0, 50.5, 22.0 ],
+					"text" : "iter"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 696.0, 332.0, 50.0, 22.0 ],
+					"text" : "getkeys"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 603.0, 332.0, 58.0, 22.0 ],
+					"text" : "set $1 $2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 601.0, 377.0, 135.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict attrs"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-21",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -63,7 +241,7 @@
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js attrs-to-dict myconcat"
+					"text" : "js attrs-to-dict myobj"
 				}
 
 			}
@@ -71,74 +249,43 @@
 				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 596.0, 360.0, 100.0, 22.0 ],
-					"text" : "groove~",
-					"varname" : "myconcat"
+					"outlettype" : [ "signal", "" ],
+					"patching_rect" : [ 776.0, 295.0, 100.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"outputstate" : 0,
+						"resampleaudioinput" : 0
+					}
+,
+					"text" : "mubu.concat~",
+					"varname" : "myobj"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-9",
-					"items" : "<empty>",
+					"items" : [ "advance", ",", "aligned", ",", "allowrepeatmarkers", ",", "attack", ",", "attackcurve", ",", "audio", ",", "autotrigger", ",", "bufferindex", ",", "channeloffset", ",", "cyclic", ",", "delay", ",", "duplicatechannels", ",", "duration", ",", "durationcol", ",", "durationvar", ",", "filterfreq", ",", "filterfreqvar", ",", "filtergain", ",", "filtermode", ",", "filterq", ",", "filterqvar", ",", "level", ",", "levelvar", ",", "markers", ",", "maxdelay", ",", "maxduration", ",", "maxresampling", ",", "microtiming", ",", "minmaxperiod", ",", "mubuname", ",", "mute", ",", "offset", ",", "offsetcol", ",", "outputdelays", ",", "outputgains", ",", "outputmarkers", ",", "outputstate", ",", "period", ",", "periodvar", ",", "play", ",", "positionvar", ",", "release", ",", "releasecurve", ",", "resampleaudioinput", ",", "resampling", ",", "resamplingvar", ",", "reverse", ",", "tracknotfoundwarning", ",", "varmetro", ",", "window" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 436.0, 146.0, 111.0, 22.0 ],
+					"patching_rect" : [ 571.0, 501.0, 111.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "0", "1" ],
+							"parameter_enum" : [ "advance", "aligned", "allowrepeatmarkers", "attack", "attackcurve", "audio", "autotrigger", "bufferindex", "channeloffset", "cyclic", "delay", "duplicatechannels", "duration", "durationcol", "durationvar", "filterfreq", "filterfreqvar", "filtergain", "filtermode", "filterq", "filterqvar", "level", "levelvar", "markers", "maxdelay", "maxduration", "maxresampling", "microtiming", "minmaxperiod", "mubuname", "mute", "offset", "offsetcol", "outputdelays", "outputgains", "outputmarkers", "outputstate", "period", "periodvar", "play", "positionvar", "release", "releasecurve", "resampleaudioinput", "resampling", "resamplingvar", "reverse", "tracknotfoundwarning", "varmetro", "window" ],
 							"parameter_linknames" : 1,
-							"parameter_longname" : "output-catart-parameter",
-							"parameter_mmax" : 1,
+							"parameter_longname" : "all-params",
+							"parameter_mmax" : 49,
 							"parameter_shortname" : "catart-parameter",
 							"parameter_type" : 2
 						}
 
 					}
 ,
-					"varname" : "output-catart-parameter"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-25",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 197.166626000000008, 117.0, 50.0, 22.0 ],
-					"text" : "set"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-23",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 260.666626000000008, 65.0, 72.0, 22.0 ],
-					"text" : "sel bang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 260.666626000000008, 34.0, 72.0, 22.0 ],
-					"text" : "route text"
+					"varname" : "all-params"
 				}
 
 			}
@@ -149,7 +296,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 260.666626000000008, 113.0, 72.0, 22.0 ],
+					"patching_rect" : [ 219.666626000000008, 147.0, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -176,7 +323,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 199.0, 6.0, 58.0, 21.0 ],
+					"patching_rect" : [ 108.666626000000008, 116.0, 58.0, 21.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 58.0, 21.0 ],
 					"text" : "Message:",
@@ -186,40 +333,9 @@
 			}
 , 			{
 				"box" : 				{
-					"hint" : "The message to be prefixed to the value. Can be empty for no prefix.",
-					"id" : "obj-15",
-					"keymode" : 1,
-					"lines" : 1,
-					"maxclass" : "textedit",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "int", "", "" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 260.666626000000008, 6.0, 143.0, 21.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 75.0, 0.0, 135.0, 21.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_invisible" : 1,
-							"parameter_linknames" : 1,
-							"parameter_longname" : "output-osc-message[1]",
-							"parameter_order" : 1,
-							"parameter_shortname" : "osc-message",
-							"parameter_type" : 3
-						}
-
-					}
-,
-					"varname" : "output-osc-message[1]",
-					"wordwrap" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"comment" : "",
 					"id" : "obj-7",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -236,9 +352,10 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 128.5, 44.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"dmap-output-send-name" : [ "target" ],
+						"all-params" : [ 0 ],
+						"dmap-output-send-name" : [ "target3" ],
 						"output-catart-parameter" : [ 0 ],
-						"output-osc-message[1]" : [ "" ]
+						"output-catart-parameter[1]" : [ 0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -309,7 +426,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-10",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -358,15 +475,14 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
-							"parameter_longname" : "output-send-name",
-							"parameter_order" : 1,
+							"parameter_longname" : "output-send-name[1]",
 							"parameter_shortname" : "output-send-name",
 							"parameter_type" : 3
 						}
 
 					}
 ,
-					"text" : "target",
+					"text" : "target3",
 					"varname" : "dmap-output-send-name",
 					"wordwrap" : 0
 				}
@@ -409,8 +525,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-15", 0 ]
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-13", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-13", 1 ]
 				}
 
 			}
@@ -439,8 +562,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"source" : [ "obj-18", 0 ]
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -460,22 +583,59 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"order" : 1,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"order" : 0,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
-					"source" : [ "obj-23", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
-					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"source" : [ "obj-25", 0 ]
+					"source" : [ "obj-32", 1 ]
 				}
 
 			}
@@ -500,32 +660,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-15" : [ "output-osc-message[1]", "osc-message", 1 ],
-			"obj-4" : [ "output-send-name", "output-send-name", 1 ],
-			"obj-9" : [ "output-catart-parameter", "catart-parameter", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "attrs-to-dict.js",
-				"bootpath" : "~/src/yadam",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

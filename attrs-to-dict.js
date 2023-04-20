@@ -1,20 +1,4 @@
-// listen to change in obj of given list of attrs
-
-function valuechanged (data)
-{
-    if (data.attrname)
-    {
-        //post(data.attrname, data.value, "\n");
-	outlet(0, data.attrname, data.value);
-    }
-}
-
-
-function loadbang ()
-{
-    //post("loadbang")
-    this.bang();
-}
+// list attrs of given obj
 
 function bang ()
 {
@@ -23,8 +7,6 @@ function bang ()
 
     var ob = this.patcher.getnamed(jsarguments[1]); // get the object in 1st arg
     var obattrs = ob.getattrnames();
-    var listento = [];
-    var listeners = [];
 
     post("objname: ", jsarguments[1], "\n");
     post("object: ", ob.maxclass, "\n");
@@ -32,7 +14,10 @@ function bang ()
     
     for (var i = 0; i < obattrs.length; i++)
     {
-	  post(i, obattrs[i], ob.getattr(obattrs[i]), "\n");
+	//crash: post(i, obattrs[i], ob.getattr(obattrs[i]), "\n");
+	//no crash: 
+ 	post(i, obattrs[i], "\n");
+	outlet(0, i, obattrs[i]);
     }
 }
 
