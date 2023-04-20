@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1408.0, 176.0, 644.0, 411.0 ],
+		"rect" : [ 1967.0, 1519.0, 644.0, 411.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -238,13 +238,14 @@
 					"fontsize" : 12.0,
 					"hint" : "The name of the \"send\" object to receive the itput value from.",
 					"id" : "obj-1",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 32.500122000000033, 9.0, 73.0, 21.0 ],
+					"patching_rect" : [ 32.500122000000033, 9.0, 73.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 73.0, 21.0 ],
-					"text" : "From Send:",
+					"presentation_rect" : [ 0.0, 0.0, 83.0, 21.0 ],
+					"text" : "Receive from:",
 					"textcolor" : [ 0.3, 0.3, 0.3, 1.0 ]
 				}
 
@@ -261,7 +262,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 108.0, 9.0, 143.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 75.0, 0.0, 136.0, 21.0 ],
+					"presentation_rect" : [ 79.666666507720947, 0.0, 131.333333492279053, 21.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,

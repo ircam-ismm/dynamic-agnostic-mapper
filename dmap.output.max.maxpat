@@ -134,7 +134,7 @@
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "output-osc-message[1]",
+							"parameter_longname" : "output-osc-message",
 							"parameter_order" : 1,
 							"parameter_shortname" : "osc-message",
 							"parameter_type" : 3
@@ -189,8 +189,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 115.0, 188.0, 60.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 209.0, 0.0, 60.0, 21.0 ],
-					"text" : "To Target;",
+					"presentation_rect" : [ 216.0, 0.0, 53.0, 21.0 ],
+					"text" : "Send to:",
 					"textcolor" : [ 0.3, 0.3, 0.3, 1.0 ]
 				}
 
@@ -289,7 +289,8 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
-							"parameter_longname" : "output-send-name[1]",
+							"parameter_longname" : "output-send-name",
+							"parameter_order" : 1,
 							"parameter_shortname" : "output-send-name",
 							"parameter_type" : 3
 						}
