@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 4,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1076.0, 444.0, 600.0, 879.0 ],
+		"rect" : [ 359.0, 100.0, 753.0, 829.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -72,12 +72,13 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 57.5, 90.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 60.0, 0.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 0.0, 2.0, 22.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_longname" : "scale-clip",
+							"parameter_longname" : "scale-clip[14]",
 							"parameter_mmax" : 1,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "clip",
 							"parameter_type" : 2
 						}
@@ -99,7 +100,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 18.5, 93.0, 36.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 43.0, 21.0 ],
+					"presentation_rect" : [ 0.0, -21.0, 43.0, 21.0 ],
 					"text" : "Clip:",
 					"textcolor" : [ 0.3, 0.3, 0.3, 1.0 ]
 				}
@@ -158,7 +159,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-7",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -171,7 +172,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-5",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -232,7 +233,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 443.000122000000033, 60.0, 56.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 418.0, 0.0, 56.0, 21.0 ],
+					"presentation_rect" : [ 207.0, -21.0, 56.0, 21.0 ],
 					"text" : "OutMax:",
 					"textcolor" : [ 0.3, 0.3, 0.3, 1.0 ]
 				}
@@ -249,7 +250,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 347.000122000000033, 60.0, 54.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 309.0, 0.0, 54.0, 21.0 ],
+					"presentation_rect" : [ 153.0, -21.0, 54.0, 21.0 ],
 					"text" : "OutMin:",
 					"textcolor" : [ 0.3, 0.3, 0.3, 1.0 ]
 				}
@@ -264,9 +265,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 249.5, 60.0, 45.0, 21.0 ],
+					"patching_rect" : [ 249.5, 60.0, 46.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 205.833344000000011, 0.0, 45.0, 21.0 ],
+					"presentation_rect" : [ 86.833344000000011, -21.0, 46.0, 21.0 ],
 					"text" : "InMax:",
 					"textcolor" : [ 0.3, 0.3, 0.3, 1.0 ]
 				}
@@ -283,7 +284,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 149.5, 60.0, 43.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 111.0, 0.0, 43.0, 21.0 ],
+					"presentation_rect" : [ 34.0, -21.0, 43.0, 21.0 ],
 					"text" : "InMin:",
 					"textcolor" : [ 0.3, 0.3, 0.3, 1.0 ]
 				}
@@ -301,7 +302,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 201.5, 60.0, 52.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 153.833344000000011, 0.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 34.0, 2.0, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0.0 ],
@@ -309,6 +310,7 @@
 							"parameter_invisible" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "scale-inmin",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "scale-inmin",
 							"parameter_type" : 3
 						}
@@ -331,7 +333,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 301.5, 60.0, 53.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 249.833344000000011, 0.0, 45.0, 22.0 ],
+					"presentation_rect" : [ 86.833344000000011, 2.0, 51.000000178813934, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 1 ],
@@ -339,6 +341,7 @@
 							"parameter_invisible" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "scale-inmax",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "scale-inmax",
 							"parameter_type" : 3
 						}
@@ -361,7 +364,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 399.000122000000033, 60.0, 52.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 364.0, 0.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 153.0, 2.0, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0.0 ],
@@ -369,6 +372,7 @@
 							"parameter_invisible" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "scale-outmin",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "scale-outmin",
 							"parameter_type" : 3
 						}
@@ -391,7 +395,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 499.000122000000033, 60.0, 52.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 474.0, 0.0, 44.0, 22.0 ],
+					"presentation_rect" : [ 206.0, 2.0, 50.000000178813934, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 1 ],
@@ -399,6 +403,7 @@
 							"parameter_invisible" : 1,
 							"parameter_linknames" : 1,
 							"parameter_longname" : "scale-outmax",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "scale-outmax",
 							"parameter_type" : 3
 						}
@@ -528,7 +533,27 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-11" : [ "scale-clip[14]", "clip", 0 ],
+			"obj-2" : [ "scale-inmin", "scale-inmin", 0 ],
+			"obj-4" : [ "scale-inmax", "scale-inmax", 0 ],
+			"obj-43" : [ "scale-outmax", "scale-outmax", 0 ],
+			"obj-44" : [ "scale-outmin", "scale-outmin", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }
